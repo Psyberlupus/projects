@@ -1,4 +1,4 @@
-# projects
+# Hakathon
 SMBKILLER  for all windows hosts in subnet. EternalExploits ;> XD
 Looks for anonymously accessable named pipes in every windows version
 Looks for ms017_010 vulnerability patch
