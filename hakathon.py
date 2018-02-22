@@ -6,7 +6,7 @@ import time
 def checker():
     c = "python checker.py " + sys.argv[1]
     os.system(c)
-    print "\n"
+    print ("\n")
     
 
 def handler():

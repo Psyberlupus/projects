@@ -3,6 +3,7 @@ import socket
 
 bind_ip = "0.0.0.0"
 bind_port = 1337
+ 
 
 server = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
 server.bind((bind_ip , bind_port))
