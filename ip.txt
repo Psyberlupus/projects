@@ -3,3 +3,73 @@
    IPv4 Address. . . . . . . . . . . : 192.168.239.1
    IPv4 Address. . . . . . . . . . . : 192.168.17.1
    IPv4 Address. . . . . . . . . . . : 192.168.0.101
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Autoconfiguration IPv4 Address. . : 169.254.21.255
+   IPv4 Address. . . . . . . . . . . : 192.168.8.1
+   IPv4 Address. . . . . . . . . . . : 192.168.75.1
+   IPv4 Address. . . . . . . . . . . : 192.168.43.217

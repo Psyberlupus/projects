@@ -7,7 +7,7 @@ bind_port = 1337
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((bind_ip, bind_port))
 server.listen(1)
-print "[*] Listening on port", bind_port, "... [*]"
+print ("[*] Listening on port " + str(bind_port) + "... [*]")
 
 
 # client handling system
@@ -15,7 +15,7 @@ def handle_client(client_socket):
     request = client_socket.recv(1024)
     client_socket.send('\r\n')
     request = request + client_socket.recv(1024)
-    print request
+    print (request)
     while request:
         comm = raw_input("Command ->")
         if comm == "identify":
@@ -24,7 +24,7 @@ def handle_client(client_socket):
             # print resp
             # client_socket.send('\r\n')
             resp = client_socket.recv(4096)
-            print resp
+            print (resp)
             # time.sleep(3)
 
             pid = raw_input("PID to kill ")
@@ -53,7 +53,7 @@ def handle_client(client_socket):
 
         while request:
 
-            print request
+            print (request)
             if (raw_input("Continue? (c)") == 'c'):
                request = client_socket.recv(1024)
             else:
