@@ -108,11 +108,11 @@ for pipe_name, pipe_uuid in pipes.items():
 
         dce.disconnect()
     except smb.SessionError as e:
-        # print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error_code][0]))
-        print("[*] Connection failed!!  [*]")
+        print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error_code][0]))
+        #print("[*] Connection failed!!  [*]")
     except smbconnection.SessionError as e:
-        # print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error][0]))
-        print("[*] Connection failed!!  [*]")
+        print('{}: {}'.format(pipe_name, nt_errors.ERROR_MESSAGES[e.error][0]))
+        #print("[*] Connection failed!!  [*]")
 
 conn.disconnect_tree(tid)
 conn.logoff()
