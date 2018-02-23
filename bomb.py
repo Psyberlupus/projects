@@ -38,7 +38,9 @@ def bomb(pipe):
     ipaddre = sys.argv[1]  # '192.168.17.134'
     u_choice = raw_input("Shell or Patch? (S/P) for " + ipaddre)
 
-    while (u_choice != 'S' or u_choice != 's' or u_choice != 'P' or u_choice != 'p'):
+    while(1):
+        if(u_choice == 'S' or u_choice == 's' or u_choice == 'P' or u_choice == 'p'):
+	        break
         u_choice = raw_input("Please enter valid choice (S/P): ")
 
     global command
